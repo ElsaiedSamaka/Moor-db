@@ -44,6 +44,7 @@ class _NewTaskInputState extends State<NewTaskInput> {
         onSubmitted: (inputName) {
           final database = Provider.of<AppDatabase>(context);
           final task = Task(
+            // id and iComplted are required but fuck it :)
             name: inputName,
             dueDate: newTaskDate,
           );
